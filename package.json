@@ -1,0 +1,27 @@
+{
+  "name": "cat",
+  "version": "1.0.0",
+  "description": "the website for cat's food",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.0",
+    "browser-sync": "^2.26.3",
+    "cssnext": "^1.8.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
+    "postcss-focus": "^4.0.0",
+    "postcss-pxtorem": "^4.0.1",
+    "precss": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "leogasmus",
+  "license": "ISC"
+}
