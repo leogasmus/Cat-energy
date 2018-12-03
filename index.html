@@ -4,18 +4,35 @@
 	<meta charset="UTF-8">
 	<title>Start template</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="../dist/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/normalize.css">
+	<link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
 	<header>
-		<h1>Welcome on my first start template</h1>
+		<div class="container">
+			<nav class="navigation">
+					<div class="navigation__top-line">
+						<picture class="logo__image">
+							<source
+								scrset="dist/img/logo-m.webp"
+								type="image/webp">
+							<img 
+							src="dist/img/logo-m.png" alt="Happy cat">
+						
+							</picture>
+						<p class="logo__title"><b>Cat</b> Energy</p></a>
+						<span class="toggle"></span>
+					</div>
+					<ul class="navigatin__list">
+						<li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
+						<li class="navigation__item"><a href="#" class="navigation__link">Каталог продукции</a></li>
+						<li class="navigation__item"><a href="#" class="navigation__link">Подбор программы</a></li>
+					</ul>
+				</nav>
+		</div>
 	</header>
-	<main>
-		<p>This is my first html template</p>
-	</main>
-	<footer>
-		<p>I hope it works</p>
-	</footer>
+
 	<script src="../dist/js/common.min.js"></script>
 </body>
 </html>

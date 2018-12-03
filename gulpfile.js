@@ -64,7 +64,7 @@ gulp.task('js', ['common-js'], function() {
 //Watch
 //////////////
 gulp.task('watch', ['css', 'js', 'browser-sync'], function() {
-	gulp.watch('src/css/style.css', ['css']);
+	gulp.watch('src/css/style.css', ['css'], browserSync.reload);
 	gulp.watch(['src/libs/**/*.js', 'src/js/script.js'], ['js']);
 	gulp.watch('index.html', browserSync.reload);
 });
