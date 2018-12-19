@@ -4,3 +4,109 @@
 body{
 	font-family: sans-serif;
 }
+img{
+	max-width: 100%;
+	display: block;
+}
+.container{
+	padding: 0 20px;
+}
+.navigation__top-line{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo__title{
+	font-family: 'Oswald';
+	font-size: 20px;
+	margin: 24px 0;
+	text-transform: uppercase;
+}
+.toggle,
+.toggle:before,
+.toggle:after{
+	display: block;
+	width: 24px;
+	height: 2px;
+	background: var(--color-black);
+}
+.toggle:before,
+.toggle:after{
+	content: '';
+	display: block;
+	position: relative;
+}
+.toggle:before{
+	top: -6px;
+}
+.toggle:after{
+	top: 4px;
+}
+.navigatin__list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+.navigation__item{
+	padding: 26px 0;
+	border-top: 1px solid #e6e6e6;
+}
+.navigation__link{
+	font-family: 'Oswald';
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--color-black);
+	font-weight: 500;
+	font-size: 20px;
+	text-decoration: none;
+}
+/*-----First -section------*/
+.food-preview{
+	position: relative;
+	background: url('../img/section-bg-mobile.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	min-height: 306px;
+}
+.main-header{
+	margin: 0;
+	padding: 40px 0 10px 0;
+	text-align: center;
+	font-family: 'Oswald';
+	font-size: 36px;
+	font-weight: normal;
+	color: #fff;
+}
+.section-title{
+	text-align: center;
+	font-family: 'Oswald';
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #fff;
+}
+.food-image{
+	position: absolute;
+	width: 280px;
+	height: auto;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.btn{
+	display: block;
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald';
+	font-size: 14px;
+	color: #fff;
+	background-color: #68b738;
+	border: none;
+}
+.button-program{
+	position: relative;
+	top: 270px;
+}

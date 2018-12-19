@@ -10,8 +10,8 @@
 </head>
 <body>
 	<header>
-		<div class="container">
-			<nav class="navigation">
+		<nav class="navigation">
+				<div class="container">
 					<div class="navigation__top-line">
 						<picture class="logo__image">
 							<source
@@ -24,15 +24,64 @@
 						<p class="logo__title"><b>Cat</b> Energy</p></a>
 						<span class="toggle"></span>
 					</div>
+				</div>	
 					<ul class="navigatin__list">
 						<li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
 						<li class="navigation__item"><a href="#" class="navigation__link">Каталог продукции</a></li>
 						<li class="navigation__item"><a href="#" class="navigation__link">Подбор программы</a></li>
 					</ul>
-				</nav>
-		</div>
+		</nav>
 	</header>
+	<main>
+		<section class="food-preview">
+			<div class="container">
+				<h1 class="main-header">Функциональное питание для котов</h1>
+				<p class="section-title">Занялся собой? Займись котом!</p>
+				<picture class="food-image">
+					<source scrset="dist/img/food-mobile.webp" type="image/webp">
+					<img src="dist/img/food-mobile.png" alt="Cat food">
+				</picture>
+				<button class="btn button-program">Подобрать программу</button>
+			</div>
+		</section>
+		<section class="programms">
+			<div class="container">
+				<ul class="programms-list">
+					<li class="proramms-item">
+						<div class="programms-header">
+							<img src="" alt="Иконка с сидящей кошка" class="programms-icon">
+							<p class="programms-name">Похудение</p>
+							<!-- /.programms-name -->
+						</div>
+						<!-- /.programms-header -->
+						<p class="programms-desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+						<!-- /.programms-desc -->
+						<a href="#" class="more-btn">Католог SLIM</a>
+					</li>
+					<!-- /.proramms-item -->
+					<li class="proramms-item">
+						<div class="programms-header">
+							<img src="" alt="Иконка с идущей кошка" class="programms-icon">
+							<p class="programms-name">Набор массы</p>
+							<!-- /.programms-name -->
+						</div>
+						<!-- /.programms-header -->
+						<p class="programms-desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+						<!-- /.programms-desc -->
+						<a href="#" class="more-btn">Каталог PRO</a>
+					</li>
+					<!-- /.proramms-item -->
+				</ul>
+				<!-- /.programms-list -->
+			</div>
+			<!-- /.container -->
+		</section>
 
+
+	</main>
+	<footer role="contentinfo">
+		
+	</footer>
 	<script src="../dist/js/common.min.js"></script>
 </body>
 </html>
