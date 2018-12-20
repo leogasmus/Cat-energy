@@ -18,6 +18,16 @@ img{
 	align-items: center;
 	justify-content: space-between;
 }
+.logo{
+	width: 60%;
+	text-decoration: none;
+	color: #000;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 .logo__title{
 	font-family: 'Oswald';
 	font-size: 20px;
@@ -67,6 +77,10 @@ img{
 	font-size: 1.25rem;
 	text-decoration: none;
 }
+.navigation__link:hover,.navigation__link:focus{
+	color: #68b738;
+}
+
 /*-----First -section------*/
 .food-preview{
 	position: relative;
@@ -114,9 +128,108 @@ img{
 	font-size: 0.875rem;
 	color: #fff;
 	background-color: #68b738;
-	border: none;
+	border: 1px solid transparent;
+	transition: .3s ease;
+}
+.btn:hover,.btn:focus{
+	color: #68b738;
+	background-color: #fff;
+	border: 1px solid #68b738;
 }
 .button-program{
-	position: relative;
-	top: 270px;
+	margin-top: 140px;
+}
+
+.programms{
+	margin-top: 20px;
+}
+.programms-list{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.proramms-item{
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #f2f2f2;
+}
+.proramms-item:first-child{
+	margin-top: 0;
+}
+.programms-header{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+}
+.programms-icon{
+	margin: 0 20px 20px 0;
+}
+.programms-name{
+	text-transform: uppercase;
+	font-family: 'Oswald';
+	font-size: 24px;
+	font-size: 1.5rem;
+	color: #000;
+}
+.programms-desc{
+	margin: 0 0 20px 0;
+	padding-bottom: 20px;
+	font-family: 'Arial';
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 1.286em;
+	color: #444;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.more-btn{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Oswald';
+	font-size: 16px;
+	font-size: 1rem;
+	color: #000;
+}
+.more-btn:hover,.more-btn:focus{
+	text-decoration: underline;
+}
+.more-btn:after{
+	content:'';
+	display: inline-block;
+	width: 24px;
+	height: 11px;
+	margin-left: 15px;
+	background: url(../img/icon/arrow.png);
+}
+/*-----Section-Second------*/
+.section-header{
+	margin: 40px 0;
+	font-family: 'Oswald';
+	font-size: 36px;
+	font-size: 2.25rem;
+	font-weight: normal;
+}
+.advantages-list{
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+}
+.advantages-item{
+	margin-bottom: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+.advantages-icon{
+	margin-right: 20px;	
+}
+.advantages-desc{
+	font-family: 'Arial';
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 1.286em;
+	color: #444;
 }
