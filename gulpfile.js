@@ -60,12 +60,24 @@ gulp.task('js', ['common-js'], function() {
 	.pipe(gulp.dest('dist/js'))
 	.pipe(browserSync.reload({ stream: true }));
 });
+
+//////////////
+//Image
+//////////////
+gulp.task('image', function(){
+	return gulp.src([
+		'src/img/**/*'])
+	.pipe(gulp.dest('dist/img/'))
+});
+
+
 //////////////
 //Watch
 //////////////
 gulp.task('watch', ['css', 'js', 'browser-sync'], function() {
 	gulp.watch('src/css/style.css', ['css'], browserSync.reload);
 	gulp.watch(['src/libs/**/*.js', 'src/js/script.js'], ['js']);
+	gulp.watch(['src/img/**/*'],['image']);
 	gulp.watch('index.html', browserSync.reload);
 });
 
