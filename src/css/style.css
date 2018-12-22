@@ -17,18 +17,20 @@ img{
 	justify-content: space-between;
 }
 .logo{
-	width: 60%;
 	text-decoration: none;
 	color: #000;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 .logo__title{
 	font-family: 'Oswald';
 	font-size: 20px;
 	margin: 24px 0;
 	text-transform: uppercase;
+	flex-grow:1;
+}
+.logo__image{
+	flex-grow:1;
 }
 .toggle,
 .toggle:before,
@@ -215,7 +217,7 @@ img{
 	line-height: 1.286em;
 	color: #444;
 }
-/*------Section - Third*/
+/*------Section - EXEMPLE*/
 .exemple{
 	background: #f2f2f2;
 	padding-bottom: 40px;
@@ -272,12 +274,13 @@ img{
 	margin-top: -10px;
 }
 .cat-exemple-photo{
+	height: 240px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .preview-controls{
-	margin-top: 40px;
+	margin-top: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -297,10 +300,13 @@ img{
 	border-radius: 4px;
 }
 .control-line__item{
+	position: relative;
+	left: 0;
 	width: 35px;
 	height: 6px;
 	background: #68b738;
 	border-radius: 4px;
+	transition: .4s ease;
 }
 /*----Section - fourth*/
 .contact-wrap{

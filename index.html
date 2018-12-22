@@ -22,7 +22,8 @@
 								src="dist/img/logo-m.png" alt="Happy cat">
 							
 								</picture>
-							<p class="logo__title"><b>Cat</b> Energy</p></a></a>
+							<p class="logo__title"><b>Cat</b> Energy</p>
+						</a> <!--end-logo-->
 						<span class="toggle"></span>
 					</div>
 				</div>	
@@ -126,14 +127,14 @@
 				</div>
 				<p class="exemple-price">Затраты на питание: 15 000 руб.</p>
 				<picture class="cat-exemple-photo">
-					<img src="dist/img/fat-cat.png" alt="Fact cat exemple">
+					<img src="dist/img/fat-cat.png" alt="Fact cat exemple" id="catPhoto">
 				</picture>
 				<div class="preview-controls">
-					<button class="preview-control control-before">Было</button>
+					<button class="preview-control control-before" id="btnBef">Было</button>
 					<div class="control-line">
-						<div class="control-line__item"></div>
+						<div class="control-line__item" id="line"></div>
 					</div>
-					<button class="preview-control control-after">Стало</button>
+					<button class="preview-control control-after" id="btnAf">Стало</button>
 				</div>
 				<!-- /.exemple-title-wrap -->
 			</div>
@@ -169,6 +170,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="../dist/js/common.min.js"></script>
+	<script src="dist/js/script.min.js"></script>
 </body>
 </html>
