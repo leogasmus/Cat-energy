@@ -27,10 +27,6 @@ img{
 	font-size: 20px;
 	margin: 24px 0;
 	text-transform: uppercase;
-	flex-grow:1;
-}
-.logo__image{
-	flex-grow:1;
 }
 .toggle,
 .toggle:before,
@@ -39,6 +35,7 @@ img{
 	width: 24px;
 	height: 2px;
 	background: var(--color-black);
+	transition: .2s ease;
 }
 .toggle:before,
 .toggle:after{
@@ -52,11 +49,30 @@ img{
 .toggle:after{
 	top: 4px;
 }
+.toggle-close{
+	opacity: 1;
+	transform: rotate(45deg);
+}
+.toggle-close:before{
+	transform: rotate(-90deg);
+	top: 0;
+}
+.toggle-close:after{
+	transform: rotate(45deg);
+	top: -2px;
+	opacity: 0;
+}
 .navigatin__list{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	text-align: center;
+	transition: .2s ease;
+}
+.navigatin__list-hover{
+	position: absolute;
+	top: 99999px;
+	z-index: -1;
 }
 .navigation__item{
 	padding: 26px 0;
@@ -326,6 +342,10 @@ img{
 	line-height: 20px;
 	color: #444;
 }
+.map{
+	max-width: 100%;
+	overflow: hidden;
+}
 /*-----FOOTER-------*/
 .footer{
 	background: #f2f2f2;
@@ -352,8 +372,12 @@ img{
 	align-items: center;
 	justify-content: space-between;
 }
-.copy-text{
+.copy-link{
 	font-family: 'Arial';
 	font-size: 16px;
 	color: #444;
+	text-decoration: none;
+}
+.copy-link:hover{
+	text-decoration: underline;
 }
